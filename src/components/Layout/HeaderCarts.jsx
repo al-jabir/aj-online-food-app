@@ -1,5 +1,5 @@
 import React from "react";
-import CartIcon from "../../Cart/CartIcon";
+import CartIcon from "../Cart/CartIcon";
 
 import styled from "./HeaderCarts.module.css";
 
@@ -9,8 +9,8 @@ const HeaderCarts = () => {
       <span className={styled.icon}>
         <CartIcon />
       </span>
-      <span className={styled.badge}>Your Cart</span>
-      <span>3</span>
+      <span className={styled.badge}> Your Cart </span>
+      <span> 3 </span>
     </button>
   );
 };
