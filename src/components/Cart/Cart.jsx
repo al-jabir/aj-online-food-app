@@ -1,7 +1,8 @@
 import React from "react";
 import Modal from "../UI/Modal";
 import styled from "./Cart.module.css";
-const Cart = () => {
+const Cart = ({ onClose }) => {
+  console.log(onClose);
   const CardItem = (
     <ul className={styled["cart-items"]}>
       {[
@@ -17,14 +18,16 @@ const Cart = () => {
     </ul>
   );
   return (
-    <Modal>
+    <Modal onClose={onClose}>
       {CardItem}
       <div className={styled.total}>
         <span>Total Amount</span>
         <span>25.43</span>
       </div>
       <div className={styled.actions}>
-        <button className={styled["button--alt"]}>Close</button>
+        <button className={styled["button--alt"]} onClick={onClose}>
+          Close
+        </button>
         <button className={styled.button}>Order</button>
       </div>
     </Modal>
