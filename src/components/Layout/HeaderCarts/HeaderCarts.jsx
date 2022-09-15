@@ -10,7 +10,7 @@ const HeaderCarts = ({ onClickIcon }) => {
   const numberOfCartItem = cartCount.items.reduce((currCont, item) => {
     return (currCont += item.amount);
   }, 0);
-  console.log(numberOfCartItem);
+  console.log({ numberOfCartItem });
   return (
     <button className={styled.button} onClick={onClickIcon}>
       <span className={styled.icon}>

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import Input from "../../UI/Input";
 import styled from "./MealsForm.module.css";
+
 const MealsForm = ({ onAddToCart }) => {
   const [amountIsValid, setAmountIsValid] = useState(true);
   const amountInputRef = useRef();
@@ -12,8 +13,8 @@ const MealsForm = ({ onAddToCart }) => {
 
     if (
       enteredAmount.trim().length === 0 ||
-      enteredAmount < 1 ||
-      enteredAmount > 5
+      enteredAnotherNumber < 1 ||
+      enteredAnotherNumber > 5
     ) {
       setAmountIsValid(false);
       return;
