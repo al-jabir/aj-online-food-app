@@ -7,7 +7,7 @@ const Header = () => {
     <Fragment>
       <header className={styled.headers}>
         <h1>FoodMeals</h1>
-        <button>card</button>
+        <button>Carts</button>
       </header>
       <div className={styled["main-image"]}>
         <img src={mealsImg} alt="food-meals" />
