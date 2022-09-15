@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 
-import mealsImg from "./../assets/foodmeals.jpg";
+import mealsImg from "../../assets/foodmeals.jpg";
+import HeaderCarts from "../HeaderCarts/HeaderCarts";
 import styled from "./header.module.css";
-import HeaderCarts from "./HeaderCarts";
 const Header = () => {
   return (
     <Fragment>

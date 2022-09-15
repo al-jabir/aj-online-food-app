@@ -1,5 +1,5 @@
 import React from "react";
-import CartIcon from "../Cart/CartIcon";
+import CartIcon from "../../Cart/CartIcon";
 
 import styled from "./HeaderCarts.module.css";
 
