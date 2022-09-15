@@ -1,7 +1,9 @@
 .form {
   text-align: right;
 }
-
+input {
+  text-align: center;
+}
 .form button {
   font: inherit;
   cursor: pointer;
