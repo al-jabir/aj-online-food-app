@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+
 import { CartContext } from "../../Store/Cart-Context";
 import Modal from "../UI/Modal";
 import styled from "./Cart.module.css";
@@ -11,14 +12,19 @@ const Cart = ({ onClose }) => {
 
   const hasItems = cartCtx.items.length > 0;
 
-  const cartItemRemoveHandler = (id) => {};
-  const cartItemAddHandler = (item) => {};
+  const cartItemRemoveHandler = (id) => {
+    cartCtx.removeItem(id);
+  };
+
+  const cartItemAddHandler = (item) => {
+    cartCtx.addItem({ ...item, amount: 1 });
+  };
 
   const CartItems = (
     <ul className={styled["cart-items"]}>
-      {cartCtx.items.map((item, id) => (
+      {cartCtx.items.map((item) => (
         <CartItem
-          key={id}
+          key={item.id}
           name={item.name}
           amount={item.amount}
           price={item.price}

@@ -4,17 +4,19 @@ import styled from "./MealsForm.module.css";
 
 const MealsForm = ({ onAddToCart }) => {
   const [amountIsValid, setAmountIsValid] = useState(true);
+
   const amountInputRef = useRef();
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
+
     const enteredAmount = amountInputRef.current.value;
-    const enteredAnotherNumber = +enteredAmount;
+    const enteredAmountNumber = +enteredAmount;
 
     if (
       enteredAmount.trim().length === 0 ||
-      enteredAnotherNumber < 1 ||
-      enteredAnotherNumber > 5
+      enteredAmountNumber < 1 ||
+      enteredAmountNumber > 5
     ) {
       setAmountIsValid(false);
       return;

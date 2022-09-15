@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 import mealsImg from "../../assets/foodmeals.jpg";
 import HeaderCarts from "../HeaderCarts/HeaderCarts";
 import styled from "./header.module.css";
+
 const Header = ({ onShowCart }) => {
   return (
     <Fragment>
