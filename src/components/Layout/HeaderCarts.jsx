@@ -9,8 +9,8 @@ const HeaderCarts = () => {
       <span className={styled.icon}>
         <CartIcon />
       </span>
-      <span className={styled.badge}> Your Cart </span>
-      <span> 3 </span>
+      <span> Your Cart </span>
+      <span className={styled.badge}> 3 </span>
     </button>
   );
 };
